@@ -8,6 +8,7 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 app.use(require('./controller/moneyControl'));
+app.use(require('./controller/monthControl'));
 
 app.listen(process.env.PORT || 5000, () => {
     console.log("server connected");
